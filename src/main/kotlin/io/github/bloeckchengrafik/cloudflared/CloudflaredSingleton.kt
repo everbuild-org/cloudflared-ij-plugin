@@ -12,9 +12,7 @@ class CloudflaredSingleton private constructor() {
                     println("Starting cloudflared")
                     // Execute the cloudflared process in the background but bound to the current process
                     // So that it stops when the current process stops
-                    process = ProcessBuilder("cloudflared", "tunnel", "run")
-                        .inheritIO()
-                        .start()
+                    process = ProcessBuilder("cloudflared", "tunnel", "run").start()
 
                     process!!.onExit().thenAccept {
                         // Find out why the process exited
