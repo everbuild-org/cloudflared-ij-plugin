@@ -61,7 +61,9 @@ class CloudflaredWidgetFactory : StatusBarWidgetFactory {
     }
 
     override fun disposeWidget(widget: StatusBarWidget) {
+        /* The Widget has no shutdown logic */
     }
+
     override fun canBeEnabledOn(statusBar: StatusBar): Boolean {
         return true
     }
@@ -72,6 +74,7 @@ class CloudflaredWidgetFactory : StatusBarWidgetFactory {
         }
 
         override fun install(statusBar: StatusBar) {
+            /* The Widget has no startup logic */
         }
 
         override fun getPresentation(): WidgetPresentation {
@@ -93,6 +96,7 @@ class CloudflaredWidgetFactory : StatusBarWidgetFactory {
         }
 
         override fun dispose() {
+            /* The Widget has no shutdown logic */
         }
     }
 }
