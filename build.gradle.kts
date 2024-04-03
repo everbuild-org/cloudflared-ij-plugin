@@ -14,7 +14,7 @@ repositories {
 
 sonar {
   properties {
-    property "sonar.projectKey", "everbuild-org_cloudflared-ij-plugin_AY6j0BEbJzWph0MpES2Q"
+    property("sonar.projectKey", "everbuild-org_cloudflared-ij-plugin_AY6j0BEbJzWph0MpES2Q")
   }
 }
 
