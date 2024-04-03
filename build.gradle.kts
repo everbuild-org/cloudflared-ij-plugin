@@ -2,6 +2,7 @@ plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.7.20"
     id("org.jetbrains.intellij") version "1.9.0"
+    id("org.sonarqube") version "3.5.0.2730"
 }
 
 group = "bloeckchengrafik.github.io"
@@ -9,6 +10,12 @@ version = "1.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "everbuild-org_cloudflared-ij-plugin_AY6j0BEbJzWph0MpES2Q"
+  }
 }
 
 // Configure Gradle IntelliJ Plugin
